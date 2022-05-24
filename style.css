@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,300&display=swap');
+
+/* UNIVERSAL STYLES */
+
+:root{
+    --dark: #1f2938;
+    --blue: #3882f6;
+    --light: #f9faf8;
+    --sub: #e5e7eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+.allign {
+    width: 1024px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.spacer-inner {
+    padding: 100px 0;
+}
+
+.spacer-outer {
+    margin: 100px auto;
+}
+
+.button {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 10px;
+    color: inherit;
+    width: 105px;
+    height: 35px;
+}
+
+.dark-layout {
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+/* HERO */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h3 {
+    font-size: 24px;
+}
+
+nav div a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+header div {
+    gap: 100px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.hero-text p  {
+    font-size: 18px;
+    color: var(--sub);
+}
+
+.hero-text .button {
+    background-color: var(--blue);
+}
+
+/* to be adjusted after the image is placed */
+.placeholder {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    background: rgba(229, 231, 235, 0.5);
+}
+
+/* to be removed after the image is placed */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 200;
+}
+
+/* INFO */
+
+#info {
+    flex-direction: column;
+    align-items: center;
+}
+
+#info h2 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info .flex {
+    gap: 50px;
+}
+
+#info .flex div{
+    width: 150px;
+    text-align: center;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--blue);
+    border-radius: 10px;
+}
+
+/* QUOTE */
+
+#quote {
+    background-color: var(--sub);
+}
+
+#quote figure {
+    width: 750px;
+    margin: auto;
+}
+
+#quote figure em {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+#quote figure figcaption {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* ACTION */
+
+#action div {
+    background-color: var(--blue);
+    color: var(--light);
+    width: 70%;
+    padding: 25px 50px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#action .flex .button {
+    border: 3px solid;
+}
+
+/* FOOTER */
+
+footer div p {
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 200;
+}
